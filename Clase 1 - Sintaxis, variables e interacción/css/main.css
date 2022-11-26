@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+  background-color: #41177c;
+}
+.main-bg {
+  background-color: #1b0737;
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+.main-left {
+  grid-column: 2/5;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.main-left ::-moz-selection {
+  background-color: #fff;
+  color: #41177c;
+}
+.main-left ::selection {
+  background-color: #fff;
+  color: #41177c;
+}
+.main-left .class-number {
+  font-size: 1.2rem;
+  background-color: #727272;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-inline: 0.75rem;
+  border-radius: 100vmax;
+}
+.main-left .class-title {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin-block: 0.25em;
+}
+.main-left .course-name {
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid #fff;
+}
+.main-right {
+  grid-column: 4/6;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-right .logo-js {
+  width: 30rem;
+  max-width: 100%;
+}/*# sourceMappingURL=main.css.map */

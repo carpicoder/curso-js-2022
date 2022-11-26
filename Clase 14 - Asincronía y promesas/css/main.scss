@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import "./media-queries";
+
+$dark-color: #1b0737;
+$light-color: #41177c;
+$gray: #727272;
+$white: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, input, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 62.5rem;
+    padding: 0 1.5rem;
+}
+
+.hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: .5fr repeat(4, 1fr) .5fr;
+    background-color: $light-color;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        background-color: $dark-color;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    &-bg {
+        background-color: $dark-color;
+        grid-column: 1/5;
+        grid-row: 1/2;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &-left {
+        grid-column: 2/5;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $white;
+
+        @include mobile {
+            align-items: center;
+            text-align: center;
+        }
+        
+        ::selection {
+            background-color: $white;
+            color: $light-color;
+        }
+
+        .class-number {
+            font-size: 1.2rem;
+            background-color: $gray;
+            width: max-content;
+            padding-inline: .75rem;
+            border-radius: 100vmax;
+
+            @include mobile {
+                font-size: 1rem;
+            }
+        }
+
+        .class-title {
+            font-size: calc(2rem + 4.5vw);
+            line-height: 1.1;
+            margin-block: .25em;
+            z-index: 1;
+        }
+
+        .course-name {
+            padding-bottom: .2em;
+            border-bottom: 2px solid $white;
+
+            @include mobile {
+                font-size: .85rem;
+            }
+        }
+    }
+
+    &-right {
+        grid-column: 4/6;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo-js {
+            width: 30rem;
+            max-width: 100%;
+            max-height: 100%;
+
+            @include mobile {
+                max-width: 5rem;
+            }
+        }
+    }
+}
+
+#contenido {
+    padding: 2rem;
+
+    #titulo {
+        margin-bottom: 2rem;
+    }
+
+    .form-group {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+
+    .lista {
+        background-color: pink;
+        list-style-position: inside;
+        padding: 1rem;
+        max-width: 24rem;
+        border-radius: .8rem;
+        box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .1);
+        color: black;
+        flex-grow: 1;
+
+        .form {
+            display: flex;
+            align-items: center;
+
+            .form-input {
+                border: 0;
+                padding: .5rem;
+                margin-block: .5rem;
+                border-radius: .5rem 0 0 .5rem;
+                width: 100%;
+
+                &:focus {
+                    outline: 0;
+                }
+            }
+
+            .form-submit {
+                padding: .5rem;
+                border: 0;
+                border-radius: 0 .5rem .5rem 0;
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, .15);
+                transition: background-color .1s, color .1s;
+
+                &:hover {
+                    background-color: $dark-color;
+                    color: white;
+                }
+            }
+        }
+        
+
+        &.lista-abajo {
+            .form-input {
+                border-radius: .5rem;
+            }
+        }
+
+        #abajo {
+            word-wrap: anywhere;
+        }
+
+    }
+}
+
+.btn-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+
+    .btn {
+        border: 0;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        cursor: pointer;
+        background-color: pink;
+    
+        &:hover {
+            background-color: #d9a4ad;
+        }
+    }
+}
+
+
+
+
+
+
+
+/****** DARK MODE ******/
+
+body {
+    transition: background-color .3s, color .3s;
+}
+
+body.dark-mode {
+    background-color: $dark-color;
+    color: white;
+}

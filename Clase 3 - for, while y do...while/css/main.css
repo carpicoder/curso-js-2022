@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 62.5rem;
+  padding: 0 1.5rem;
+}
+
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+  background-color: #41177c;
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    background-color: #1b0737;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+.hero-bg {
+  background-color: #1b0737;
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+@media screen and (max-width: 600px) {
+  .hero-bg {
+    display: none;
+  }
+}
+.hero-left {
+  grid-column: 2/5;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .hero-left {
+    align-items: center;
+    text-align: center;
+  }
+}
+.hero-left ::-moz-selection {
+  background-color: #fff;
+  color: #41177c;
+}
+.hero-left ::selection {
+  background-color: #fff;
+  color: #41177c;
+}
+.hero-left .class-number {
+  font-size: 1.2rem;
+  background-color: #727272;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-inline: 0.75rem;
+  border-radius: 100vmax;
+}
+@media screen and (max-width: 600px) {
+  .hero-left .class-number {
+    font-size: 1rem;
+  }
+}
+.hero-left .class-title {
+  font-size: calc(1rem + 5vw);
+  line-height: 1.1;
+  margin-block: 0.25em;
+  z-index: 1;
+}
+.hero-left .course-name {
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid #fff;
+}
+@media screen and (max-width: 600px) {
+  .hero-left .course-name {
+    font-size: 0.85rem;
+  }
+}
+.hero-right {
+  grid-column: 4/6;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-right .logo-js {
+  width: 30rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .hero-right .logo-js {
+    max-width: 5rem;
+  }
+}
+
+.topic {
+  margin-bottom: 1rem;
+}
+.topic-title {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.topic pre {
+  background-color: #222222;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+}
+.topic pre code {
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.5;
+  font-size: 0.75rem;
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.topics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.topics {
+  display: grid;
+  grid-template-areas: "for       switch" "while     switch" "do-while  switch";
+  grid-template-columns: 1fr 1fr;
+  max-width: 60rem;
+}
+@media screen and (max-width: 600px) {
+  .topics {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.topics [aria-labelledby=for] {
+  grid-area: for;
+}
+.topics [aria-labelledby=while] {
+  grid-area: while;
+}
+.topics [aria-labelledby=do-while] {
+  grid-area: do-while;
+}
+.topics [aria-labelledby=switch] {
+  grid-area: switch;
+}/*# sourceMappingURL=main.css.map */

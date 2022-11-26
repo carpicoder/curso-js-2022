@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JS | Clase 2 - for, while y do...while</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/png" href="./img/logo-js.png" />
+</head>
+<body>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-left">
+                <p class="class-number">Clase 3</p>
+                <h1 class="class-title">
+                    for, while,<br>
+                    do...while<br>
+                    y switch
+                </h1>
+                <p class="course-name">Curso de JavaScript</p>
+            </div>
+            <div class="hero-right">
+                <img src="./img/logo-js.png" alt="Logo de JavaScript" class="logo-js">
+            </div>
+        </section>
+        <div class="topics-container">
+        <div class="topics">
+        <section aria-labelledby="for" class="topic">
+            <div class="container">
+                <h2 class="topic-title" id="for">for</h2>
+<pre><code>for (let i = 1; i &lt; 4; i++) {
+    console.log("Iteración " + i);
+}</code></pre>
+            </div>
+        </section>
+        <section aria-labelledby="while" class="topic">
+            <div class="container">
+                <h2 class="topic-title" id="while">while</h2>
+<pre><code>let x = 1;
+while (x &lt; 4) {
+    console.log("Iteración " + x);
+    x++;
+}</code></pre>
+            </div>
+        </section>
+        <section aria-labelledby="do-while" class="topic">
+            <div class="container">
+                <h2 class="topic-title" id="do-while">do...while</h2>
+<pre><code>let y = 1;
+do {
+    console.log("Iteración " + y);
+    y++;
+} while (y &lt; 4);</code></pre>
+            </div>
+        </section>
+        <section aria-labelledby="switch" class="topic">
+            <div class="container">
+                <h2 class="topic-title" id="switch">switch</h2>
+<pre><code>let z = 1;
+switch (z) {
+    case 1:
+        console.log("Z es igual a 1");
+        break;
+    case 2:
+        console.log("Z es igual a 2");
+        break;
+    case 3:
+        console.log("Z es igual a 3");
+        break;
+    default:
+        console.log("No sé el valor de Z");
+        break;
+}
+</code></pre>
+            </div>
+        </section>
+    </div>
+    </div>
+    </main>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
