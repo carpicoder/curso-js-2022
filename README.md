@@ -15,7 +15,8 @@ Entrando en cada clase van a encontra el video específico de cada una.
 
 ### Redes sociales
 - [YouTube](https://youtube.com/carpicoder)
-- [Instagram](https://instagram.com/carpicoder) (Próximamente)
+- [Instagram](https://instagram.com/carpicoder)
+- [Twitter](https://twitter.com/carpicoder)
 
 ### Para apoyar mi contenido, podés
 
