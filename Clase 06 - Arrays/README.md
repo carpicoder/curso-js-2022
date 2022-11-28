@@ -13,8 +13,9 @@
 
 ### Redes sociales
 - [YouTube](https://youtube.com/carpicoder)
-- [Instagram](https://instagram.com/carpicoder) (Próximamente)
+- [Instagram](https://instagram.com/carpicoder)
+- [Twitter](https://twitter.com/carpicoder)
 
 ### Para apoyar mi contenido, podés
 
-- [Invitarme un Cafecito](https://cafecito.com/carpicoder)
+- [Invitarme un Cafecito](https://cafecito.app/carpicoder)

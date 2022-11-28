@@ -2,7 +2,7 @@
 # Curso de JavaScript 2022
 ## Clase 01 - Sintaxis, variables e interacción
 
-### [Ver video de esta clase](https://youtube.com/playlist?list=PL8VCLfCNXjSboktEnd6CHCtxZHTwiQZQH)
+### [Ver video de esta clase](https://youtu.be/-H4W_PkFbls)
 
 ### Autor
 - Carpi Coder
@@ -13,8 +13,9 @@
 
 ### Redes sociales
 - [YouTube](https://youtube.com/carpicoder)
-- [Instagram](https://instagram.com/carpicoder) (Próximamente)
+- [Instagram](https://instagram.com/carpicoder)
+- [Twitter](https://twitter.com/carpicoder)
 
 ### Para apoyar mi contenido, podés
 
-- [Invitarme un Cafecito](https://cafecito.com/carpicoder)
+- [Invitarme un Cafecito](https://cafecito.app/carpicoder)
