@@ -30,7 +30,7 @@
 //     this.titulo = titulo;
 //     this.color = color;
 //     this.precio = precio;
-
+//     this.saludar = function(){ console.log("Hola, soy " + this.titulo) };
 // }
 
 // const producto1 = new Producto("Sillón", "Rojo", 50000);
@@ -66,9 +66,12 @@
 //         this.edad = edad;
 //         this.nacionalidad = nacionalidad;
 
-//         this.saludar = function(){ console.log("Hola, soy " + this.nombre) };
-//         this.cumpleanios = function() { this.edad++ };
-
+//     }
+//     saludar() {
+//          console.log("Hola, soy " + this.nombre);
+//     }
+//     cumpleanios() {
+//          this.edad++;
 //     }
 // }
 
@@ -93,19 +96,19 @@
 // }
 
 // PROPIEDADES Y MÉTODOS CON VARIABLES Y FUNCIONES EXTERNAS
-const IVA = 1.21;
+// const IVA = 1.21;
 
-function saludar() {
-    console.log("Hola, soy " + this.nombre);
-}
+// function saludar() {
+//     console.log("Hola, soy " + this.nombre);
+// }
 
-const producto1 = {
-    nombre: "Sillón",
-    color: "Rojo",
-    precio: 50000,
-    iva: IVA,
-    saludar
-}
+// const producto1 = {
+//     nombre: "Sillón",
+//     color: "Rojo",
+//     precio: 50000,
+//     iva: IVA,
+//     saludar
+// }
 
-producto1.saludar();
-console.log(producto1)
+// producto1.saludar();
+// console.log(producto1)
